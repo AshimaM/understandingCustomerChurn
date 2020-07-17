@@ -5,6 +5,7 @@ Moreover, research shows that loyal customers tend to spend more than new custom
 
  
 ![](Images/Statistics.png)
+
 [Image Source](https://www.ocreativedesign.com/customer-retention-using-marketing-automation/)
 
 As I’m quite interested in ecommerce, I wanted to work with a churn dataset to develop a machine learning algorithm to predict churn.
