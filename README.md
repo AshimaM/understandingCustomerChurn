@@ -12,11 +12,10 @@ As I’m quite interested in ecommerce, I wanted to work with a churn dataset to
 ## **Project workflow**
 For the project I tried to follow a typical data science project workflow. 
 ![](Images/ProjectWorkFlow.png)
-
-After identifying the business problem of customer churn that I wanted to help solve, I looked for a dataset. I have used a publicly available dataset from [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn).
+ 
 
 ## **The dataset**
-As I’m quite interested in ecommerce, I wanted to work with a churn dataset to develop a machine learning algorithm to predict churn. I have used a publicly available dataset from [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn).
+After identifying the business problem of customer churn that I wanted to help solve, I looked for a dataset. I have used a publicly available dataset from [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn).
 
 This is a relatively clean however imbalanced dataset, and provides ample opportunity to explore the data, make some meaningful visualizations, derive insights and build machine learning algorithms to make predictions.
 
