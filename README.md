@@ -26,10 +26,24 @@ Here's a brief data dictionary:
 * Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
 * Demographic information about customers – gender, age range, and if they have partners and dependents
 
-## **Exploratory analysis**
+## **Exploratory analysis and insights**
 * Customers with basic services are more likely to churn, thus it might do good to offer some services like tech support or online protection either free or may be at a promotional rate. This might help to improve the customer experience and loyalty, and thus reduce chances of churn.
 * Also, customers with no dependents or partners have more chances of leaving, thus, promotional deals for this segment who have opted for basic facilities could be focussed upon.
 * Also, the shorter the contract, the more the chances of churn. Thus, deals with longer contract should be made more enticing for the customers.
 * Further, customers with fibre-optic internet services, paperless billing options and electronic check payment method are more possible to leave.
+
+## **Data preprocessing**
+* Fixing null values- The total charges column had some nulls which were coded as spaces in the original dataset. I have filled in the missing values with median for the column with specific tenure and contract.
+
+* Barring three columns, the rest were all categorical. In order to build machine learning algorithms, I had to convert them into numerical columns. I have converted the binary ordinal columns into 0 and 1 values. The columns with three classes, for instance, Multiple Phone Lines, which had three options- Yes, No, No phoneline - I converted the 'No phoneline class' to 'No', and then converted the column values into 0 for No and 1 for Yes. This turned out to be as effective but less computationally expensive than one-hot-encoding. For the remaining columns with more than three values, I one-hot encoded them.
+
+* During the initial data exploration, I realized that the dataset is imbalanced with far more customers who had not churned. Also, when I employed logistic regression to pick the transformation for the columns in the above section, the precision and recall values for the churned customers were quite low, which essentially means that the model is not able to predict churn well. To rectify this issue, I'll tried to balance the dataset. I tried oversampling, SMOTE (Synthetic Minority Over-sampling Technique) and ADASYN (Adaptive Synthetic Sampling Method). I tested these techniques with vanilla logistic regression to decide which approach to use, with the SMOTE providing best results.
+
+## **Machine learning algoithms**
+
+In order to predict churn, I tried Logistic regression, Decision tree, Random forest and XGBoost. Logistic regression did the best job with overall best accuracy as well as Precision and Recall.
+
+
+
 
 
