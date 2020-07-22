@@ -33,5 +33,3 @@ Here's a brief data dictionary:
 * Further, customers with fibre-optic internet services, paperless billing options and electronic check payment method are more possible to leave.
 
 
-
-
